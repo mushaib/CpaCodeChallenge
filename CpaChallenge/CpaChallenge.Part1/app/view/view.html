@@ -1,0 +1,20 @@
+﻿<h2>Part 1</h2>
+<h3>PASS Subjects By Year</h3>
+
+<ul ng-repeat="d in data.data">
+   <li>{{d.year}}</li> 
+    <ul ng-repeat="s in d.subjects">
+        <li>{{s}}</li>
+    </ul>
+</ul>
+
+<h2>Part 2</h2>
+<h3>ALL Results</h3>
+
+<ul ng-repeat="d in data2.data">
+    <li>{{d.subject}}</li>
+    <ul ng-repeat="s in d.results">
+        <li>Year: {{s.year}}</li>
+        <li>Grade: {{s.grade}}</li>
+    </ul>
+</ul>
